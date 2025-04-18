@@ -1,0 +1,42 @@
+<!--Mulondi Makhado u24739163-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wishlist</title>
+        <link rel="icon" type="image/x-icon" href="./Images/Brand/Logo3.png">
+        <link rel="stylesheet" href="./CSS/wishlist.css">
+    </head>
+    <body>
+        <ul>
+            <div class="icon-div"><li><a class="icon-a" href="../../index.html"><img src="./Images/Brand/Logo3.png" alt="Home" class="icon-size"></a></li></div>
+            <li><a href="./index.html">Products</a></li>    
+            <li><a href="./deals.html">Best Deals</a></li>
+            <li><a class="currentPage"><b>Wishlist</b></a></li>    
+            <li><a href="./cart.html">Cart</a></li>
+            <div>
+                <li class="search-bar">
+                    <input type="text" id="search" placeholder="Search..."/>
+                </li>
+            </div>
+            <li>
+                <li class="filter-container">
+                    <button class="filter-btn" id="filterBtn">Filters</button>
+                </li>
+            </li>
+            <li>
+                <select name="Sort" id="Sort">
+                    <option>Sort</option>
+                    <option value="Newest">Newest Arrivals</option>
+                    <option value="PriceLH">Price: Low to High</option>
+                    <option value="PriceHL">Price: High to Low</option>
+                </select>
+            </li>
+            <li>
+                <select name="Currency" id="Currency"></select>
+            </li>
+        </ul>
+        
+        <div class="wishlist"></div>
+        <script src="./JS/wishlist.js"></script>
+    </body>
+</html>

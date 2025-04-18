@@ -1,0 +1,46 @@
+<!--Mulondi Makhado u24739163-->
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Cart</title>
+    <link rel="icon" type="image/x-icon" href="./Images/Brand/Logo3.png">
+    <link rel="stylesheet" href="./CSS/cart.css">
+    </head>
+    <body>
+        <ul>
+            <div class="icon-div"><li><a class="icon-a" href="../../index.html"><img src="./Images/Brand/Logo3.png" alt="Home" class="icon-size"></a></li></div>
+            <li><a href="./index.html">Products</a></li>    
+            <li><a href="./deals.html">Best Deals</a></li>
+            <li><a href="./wishlist.html">Wishlist</a></li>    
+            <li><a class="currentPage">Cart</a></li>
+            <div>
+                <li class="search-bar">
+                    <input type="text" id="search" placeholder="Search..."/>
+                </li>
+            </div>
+            <li>
+                <li class="filter-container">
+                    <button class="filter-btn" id="filterBtn">Filters</button>
+                </li>
+            </li>
+            <li>
+                <select name="Sort" id="Sort">
+                    <option>Sort</option>
+                    <option value="Newest">Newest Arrivals</option>
+                    <option value="PriceLH">Price: Low to High</option>
+                    <option value="PriceHL">Price: High to Low</option>
+                </select>
+            </li>
+            <li>
+                <select name="Currency" id="Currency"></select>
+            </li>
+        </ul>
+        
+        <div class="cart">
+            <div class="cart-totals">
+                <div class="cart-totals-text" id="totals"></div>
+            </div>
+        </div>
+            <script src="./JS/cart.js"></script>
+    </body>
+</html>

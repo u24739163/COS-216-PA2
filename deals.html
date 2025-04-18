@@ -1,0 +1,88 @@
+<!--Mulondi Makhado u24739163-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deals</title>
+        <link rel="icon" type="image/x-icon" href="./Images/Brand/Logo3.png">
+        <link rel="stylesheet" href="./CSS/deals.css"> 
+    </head>
+    
+    <body>
+        <ul>
+            <div class="icon-div"><li><a class="icon-a" href="../../index.html"><img src="./Images/Brand/Logo3.png" alt="Home" class="icon-size"></a></li></div>
+            <li><a href="./index.html">Producrs</a></li>    
+            <li><a  class="currentPage"><b>Best Deals</b></a></li>
+            <li><a href="./wishlist.html">Wishlist</a></li>    
+            <li><a href="./cart.html">Cart</a></li>
+            <div>
+                <!--Search bar-->
+                <li class="search-bar">
+                    <input type="text" id="search" placeholder="Search..."/>
+                </li>
+            </div>
+            <li>
+                <!--Open filter panel button-->
+                <li class="filter-container">
+                    <button class="filter-btn" id="filterBtn">Filters</button>
+                </li>
+            </li>
+            <li>
+                <select name="Sort" id="Sort">
+                    <option>Sort</option>
+                    <option value="Newest">Newest Arrivals</option>
+                    <option value="PriceLH">Price: Low to High</option>
+                    <option value="PriceHL">Price: High to Low</option>
+                    <option value="DiscountLH">Discount Low to High</option>
+                    <option value="DiscountHL">Discount High to Low</option>
+                </select>
+            </li>
+            <!--The currency dropdown list-->
+            <li>
+                <select name="Currency" id="Currency"></select>
+            </li> 
+        </ul>
+
+        <!-- Filter Panel -->
+        <div class="overlay" id="overlay"></div>
+        <div class="filter-panel" id="filterPanel">
+            <div class="filter-header">
+                <h2>Filters</h2>
+                <button class="close-filter" id="closeFilter">&times;</button>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <div class="filter-options" id="price-filter"></div>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Category</h3>
+                <div class="filter-options" id="category-filter"></div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Country of Origin</h3>
+                <div class="filter-options" id="country-filter"></div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Brand</h3>
+                <div class="filter-options" id="brand-filter"></div>
+            </div>
+            
+            <button class="apply-filters" id="applyFilters">Apply Filters</button>
+        </div>
+        <div class="banner">
+            <p>Up to 98% OFF </p>
+        </div>
+        <!--The Products container-->
+        <div class="products"></div>
+
+        <!--Loading screen-->
+        <div id="loading-screen" style="display: none;">
+            <div class="loader"></div>
+        </div>
+
+        <script src="./JS/deals.js"></script>
+    </body>
+</html>

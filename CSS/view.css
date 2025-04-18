@@ -1,0 +1,247 @@
+/*Mulondi Makhado u24739163*/
+
+body {
+    background-color: #311d16; 
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #221510;
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 100%;   
+    z-index: 1000;
+    display: flex;      
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bullets{
+    width: 220px;
+    height: 60px;
+    justify-self: center;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-family: "Agrandir Grand";
+    font-size: 20px;
+}
+li a:hover {
+    background-color: #1111114c;
+}
+.active {
+    background-color: #04AA6D;
+}
+.currentPage {
+    background-color: #311d16;
+}
+.icon-a{
+    justify-self: center;
+    padding: 0;
+    padding-top: 1;
+}
+.icon-size {
+    width: 50px;
+    height: 50px;
+    
+}
+.icon-div{
+    justify-self: center;
+    height: 54px;
+    width: 80px;
+    margin-right: 60px;
+    background-color: #221510;
+
+}
+li.search-bar, #Filter, #Sort {
+    margin-left: 10px; 
+    margin-right: 0;
+}
+#search, #Filter, #Sort {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    background-color: #311d16;
+    font-family: "Agrandir Grand";
+    cursor: pointer;
+}
+.product-details {
+    color: white;
+    padding: 70px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Agrandir Grand";
+    margin-top: 20px;
+}
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carousel-container{
+    background-color: #533223a4;
+    border-radius: 10px;
+    height: 500px;
+    padding-top: 10px;
+}
+.carousel-image {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.product-details h3, .product-details p {
+    margin: 10px 0;
+}
+
+.description-container{
+    margin-left: 100px;
+    
+}
+
+.product-details button:hover, .product-details button.wishlist:hover {
+transform: translateY(-10px); 
+}
+.product-details button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6f3e2b;
+    color: white;
+    font-family: "Agrandir Grand";
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.product-details button.wishlist {
+    background-color: #d4a48f;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+@font-face {
+    font-family: "Agrandir Grand";
+    src: url("../Fonts/Agrandir-WideLight.otf");
+}
+
+
+* {box-sizing:border-box}
+
+.carousel {
+  position: relative;
+  margin: auto;
+  width: 400px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 360px;
+
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #ff0000;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-weight: bold;
+    color: #04AA6D;
+    margin-right: 10px;
+}
+
+.discount {
+    font-size: 14px;
+    color: #b66340;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+::-webkit-scrollbar {
+    color: #000;
+   }
+   
+   ::-webkit-scrollbar-track {
+     background: #533223;
+     border-radius: 10px;
+   }
+   
+
+   ::-webkit-scrollbar-thumb {
+     background:#6f3e2b;
+     border-radius: 10px;
+   }
